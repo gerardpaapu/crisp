@@ -1,0 +1,21 @@
+<!doctype HTML>
+<script src="repl.js" ></script>
+<textarea id="source">
+
+</textarea>
+<input type="button" value="Evaluate" id="EvaluateButton" />
+<div id="result">
+</div>
+<script>
+var Repl = require('./repl').Repl;
+var repl = new Repl();
+var source = document.getElementById('source');
+var button = document.getElementById('EvaluateButton');
+var result = document.getElementById('result');
+
+button.addEventListener('click', function () {
+    var src = source.value;
+    var value = repl.evaluate(src);
+    result.innerText = value;
+});
+</script>
