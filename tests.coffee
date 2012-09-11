@@ -86,5 +86,3 @@ do ->
     assert.ok isFunction value
     assert.equal 3, value(3)
     assert.notEqual 5, value(3)
-
-console.log('tests.coffee')

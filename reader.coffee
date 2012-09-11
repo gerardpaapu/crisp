@@ -239,5 +239,3 @@ exports.readOne = (string) ->
 
 exports.Port = Port
 exports.Reader = Reader
-
-console.log('reader.coffee')

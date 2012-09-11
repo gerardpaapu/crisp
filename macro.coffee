@@ -18,5 +18,3 @@ macro = new Primitive (stx, env, evaluate) ->
 
 module.exports.Macro = Macro
 module.exports.macro = macro
-
-console.log('macro.coffee')

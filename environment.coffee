@@ -42,5 +42,3 @@ class Environment.Empty extends Environment
         throw new Error "#{key} is undeclared"
 
 module.exports.Environment = Environment
-
-console.log('environment.coffee')

@@ -13,5 +13,3 @@ class Repl
 
 
 exports.Repl = Repl
-
-console.log('repl.coffee')

@@ -3,6 +3,3 @@ class Symbol
     toString: -> @value 
 
 module.exports.Symbol = Symbol
-
-
-console.log('symbol.coffee')

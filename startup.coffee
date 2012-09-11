@@ -48,5 +48,3 @@ startup.set 'ceiling', Math.ceiling
 startup.set 'round', Math.round
 
 module.exports.startupEnvironment = startup
-
-console.log('startup.coffee')

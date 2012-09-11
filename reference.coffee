@@ -14,5 +14,3 @@ class Reference
     constructor: (@value) ->
 
 module.exports.Reference = Reference
-
-console.log('reference.coffee')

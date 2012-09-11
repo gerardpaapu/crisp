@@ -25,5 +25,3 @@ associate = (symbols, values) ->
     return result
 
 module.exports.function = _function
-
-console.log('function.coffee')

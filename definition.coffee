@@ -19,5 +19,3 @@ set = new Primitive (stx, env, evaluate) ->
 
 exports.define = define
 exports.set = set
-
-console.log('definition.coffee')

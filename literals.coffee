@@ -15,5 +15,3 @@ dictionaryliteral = new Primitive (stx, env, evaluate) ->
         result[stx[i++].value] = evaluate(stx[i++], env)
 
     result
-
-console.log('literals.coffee')

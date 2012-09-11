@@ -48,5 +48,3 @@ module.exports.evaluate = evaluate
 
 module.exports.eval = new Primitive (stx, env, evaluate) ->
     evaluate evaluate(stx, env), env
-
-console.log('evaluate.coffee')

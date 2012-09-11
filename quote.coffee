@@ -24,5 +24,3 @@ module.exports =
     quote: quote
     quasiquote: quasiquote
     unquote: unquote
-
-console.log('quote.coffee')

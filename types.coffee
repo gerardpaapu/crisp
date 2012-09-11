@@ -34,5 +34,3 @@ module.exports =
 
     isReference: (obj) ->
         obj instanceof Reference
-
-console.log('types.coffee')

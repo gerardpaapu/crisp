@@ -7,5 +7,3 @@ module.exports =
             evaluate success, env
         else
             evaluate failure, env
-
-console.log('conditionals.coffee')
