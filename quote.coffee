@@ -18,7 +18,9 @@ unquote = new Macro (body, env) ->
     throw new Error "Unquote should only be inside a quasiquote"
 
 isUnquoted = (stx, env) ->
-    isArray(stx) and stx.length > 0 and env.get(stx[0], null) is unquote
+    isArray(stx) and stx.length > 0 and (
+        env.get(stx[0], null) is unquote or
+        stx[0] instanceof Reference and stx[0].value is unquote)
 
 module.exports =
     quote: quote
