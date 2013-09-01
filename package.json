@@ -1,0 +1,31 @@
+{
+  "name": "crisp",
+  "version": "0.0.0",
+  "description": "An unambitious (lowecase l) lisp interpreter in coffeescript",
+  "main": "index.js",
+  "scripts": { 
+    "prepublish": "browserify -t coffeeify -c crisp repl.coffee > browser-repl.js",
+    "test": "coffee tests.coffee"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/sharkbrainguy/crisp.git"
+  },
+  "keywords": [
+    "lisp",
+    "coffee",
+    "interpreter"
+  ],
+  "author": "gerard.paapu@xero.com",
+  "license": "BSD",
+  "readmeFilename": "README.md",
+  "gitHead": "c45549f04328cb219a3848c88b707fa0fd2f4bed",
+  "bugs": {
+    "url": "https://github.com/sharkbrainguy/crisp/issues"
+  },
+  "devDependencies": {
+    "coffee-script": "~1.6.3",
+    "browserify": "~2.29.0",
+    "coffeeify": "~0.5.1"
+  }
+}

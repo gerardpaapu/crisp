@@ -1,5 +1,5 @@
 <!doctype HTML>
-<script src="repl.js" ></script>
+<script src="browser-repl.js" ></script>
 <textarea id="source">
 
 </textarea>
@@ -8,7 +8,7 @@
 </div>
 <script>
 (function () {
-    var Repl = require('./repl').Repl;
+    var Repl = window.crisp.Repl;
     var repl = new Repl();
     var source = document.getElementById('source');
     var button = document.getElementById('EvaluateButton');
