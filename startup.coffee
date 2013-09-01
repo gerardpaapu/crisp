@@ -1,22 +1,22 @@
-{Environment} = require './environment'
+{Environment} = require './environment.coffee'
 
 startup = new Environment
 
-require('./function')
-require('./conditionals')
-require('./quote')
+require('./function.coffee')
+require('./conditionals.coffee')
+require('./quote.coffee')
 
-startup.set 'function', require('./function').function
+startup.set 'function', require('./function.coffee').function
 
-{quote, unquote, quasiquote} = require './quote'
+{quote, unquote, quasiquote} = require './quote.coffee'
 
 startup.set 'quote', quote
 startup.set 'unquote', unquote
 startup.set 'quasiquote', quasiquote
 
-startup.set 'if', require('./conditionals').if
-startup.set 'macro', require('./macro').macro
-startup.set 'eval', require('./evaluate').eval
+startup.set 'if', require('./conditionals.coffee').if
+startup.set 'macro', require('./macro.coffee').macro
+startup.set 'eval', require('./evaluate.coffee').eval
 
 {define, set} = require './definition.coffee'
 startup.set 'define', define

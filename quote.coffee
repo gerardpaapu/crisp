@@ -1,7 +1,7 @@
-{Macro} = require './macro'
-{Reference} = require './reference'
-{isArray} = require './types'
-{Primitive} = require './primitive'
+{Macro} = require './macro.coffee'
+{Reference} = require './reference.coffee'
+{isArray} = require './types.coffee'
+{Primitive} = require './primitive.coffee'
 
 quote = new Primitive (body, env, evaluate) ->
     throw new SyntaxError unless body.length is 1

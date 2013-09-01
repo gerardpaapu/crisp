@@ -1,4 +1,4 @@
-{Primitive} = require './primitive'
+{Primitive} = require './primitive.coffee'
 
 arrayliteral = new Primitive (stx, env, evaluate) ->
     evaluate(item, env) for item in stx

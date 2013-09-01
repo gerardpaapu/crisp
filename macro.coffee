@@ -1,5 +1,5 @@
-{Primitive} = require './primitive'
-{isFunction} = require './types'
+{Primitive} = require './primitive.coffee'
+{isFunction} = require './types.coffee'
 assert = require 'assert'
 
 class Macro

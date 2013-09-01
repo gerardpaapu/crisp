@@ -1,4 +1,4 @@
-{Primitive} = require './primitive'
+{Primitive} = require './primitive.coffee'
 
 module.exports =
     if: new Primitive (stx, env, evaluate) ->

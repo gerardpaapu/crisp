@@ -1,7 +1,7 @@
-{evaluate} = require './evaluate'
-{Environment} = require './environment'
-reader = require './reader'
-env = require('./startup').startupEnvironment
+{evaluate} = require './evaluate.coffee'
+{Environment} = require './environment.coffee'
+reader = require './reader.coffee'
+env = require('./startup.coffee').startupEnvironment
 
 class Repl
     constructor: ->

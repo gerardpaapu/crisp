@@ -1,4 +1,4 @@
-{Primitive} = require './primitive'
+{Primitive} = require './primitive.coffee'
 
 _function = new Primitive (stx, env, evaluate) ->
     [args, body...] = stx

@@ -1,7 +1,7 @@
-{Macro} = require './macro'
-{Symbol} = require './symbol'
-{Primitive} = require './primitive'
-{Reference} = require './reference'
+{Macro} = require './macro.coffee'
+{Symbol} = require './symbol.coffee'
+{Primitive} = require './primitive.coffee'
+{Reference} = require './reference.coffee'
 
 module.exports =
     isFunction: (obj) ->

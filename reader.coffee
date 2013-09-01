@@ -1,9 +1,9 @@
-{Symbol} = require './symbol'
-{Reference} = require './reference'
+{Symbol} = require './symbol.coffee'
+{Reference} = require './reference.coffee'
 
-_function = new Reference require('./function').function
+_function = new Reference require('./function.coffee').function
 
-{quote, quasiquote, unquote} = require './quote'
+{quote, quasiquote, unquote} = require './quote.coffee'
 _quote = new Reference(quote)
 _qausiquote = new Reference(quasiquote)
 _unquote = new Reference(unquote)

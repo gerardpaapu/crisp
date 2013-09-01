@@ -2,10 +2,10 @@
     isNumber, isString, isBoolean, isFunction, isArray,
     isNull, isUndefined,
     isSymbol, isMacro, isPrimitive, isReference
-} = require './types'
+} = require './types.coffee'
 
-{Primitive} = require './primitive'
-{Environment} = require './environment'
+{Primitive} = require './primitive.coffee'
+{Environment} = require './environment.coffee'
 
 evaluate = (stx, env) ->
     if isSelfEvaluating stx
